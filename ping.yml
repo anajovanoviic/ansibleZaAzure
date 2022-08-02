@@ -1,0 +1,11 @@
+-
+  name: jq
+  hosts: server1
+  tasks:
+    
+    - name: Ansible apt install jq
+      become: true 
+      become_user: root
+      apt:
+        name: jq
+        update_cache: yes
